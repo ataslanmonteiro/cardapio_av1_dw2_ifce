@@ -1,7 +1,7 @@
 import { listaPratos, valorComanda } from "./pratos.js";
 
 class CardPrato {
-  // variáveis públicas.
+  // variáveis públicas
 
   nodeElem = document.createElement("div");
   tituloElem = document.createElement("h2");
@@ -69,10 +69,15 @@ class CardPrato {
 
     this.btnContainer.classList.add("pedidos");
 
-    this.btnContainer.append(this.pedirBtn, this.qtdElem, this.diminuir, this.nodeElem.append(
-      this.tituloContainer,
-      this.descricaoElem,
-      this.btnContainer
+    this.btnContainer.append(
+      this.pedirBtn,
+      this.qtdElem,
+      this.diminuir,
+      this.nodeElem.append(
+        this.tituloContainer,
+        this.descricaoElem,
+        this.btnContainer
+      )
     );
   }
 
