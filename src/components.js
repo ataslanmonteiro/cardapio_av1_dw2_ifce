@@ -93,3 +93,19 @@ export function criarCardPrato(info) {
   const cardObjeto = new CardPrato(info);
   return cardObjeto;
 }
+
+export function ZerarTodosPedidos(listaPratos) {
+  listaPratos.forEach((prato) => {
+    prato.qtd = 0;
+    prato.qtdElem.innerText = prato.qtd;
+  });
+  valorComanda();
+}
+
+const zerarTodosBtn = document.createElement("button");
+zerarTodosBtn.innerText = "Zerar Todos os Pedidos";
+zerarTodosBtn.classList.add("pedidos__btn");
+
+zerarTodosBtn.onclick = () => {
+  ZerarTodosPedidos(listaPratos);
+};

@@ -1,157 +1,175 @@
 :root {
-    --cor-primaria: #66f;
-    --cor-secundaria: orange;
-    --cor-ancora: #66f;
-    --cor-fundo: rgb(85, 91, 131);
+  --cor-primaria: #66f;
+  --cor-secundaria: orange;
+  --cor-ancora: #66f;
+  --cor-fundo: rgb(85, 91, 131);
 }
 
 .l-nav {
-    overflow: hidden;
-    width: 90%;
-    margin: auto;       
-    border-radius: 5px;
-    background-color: var(--cor-fundo);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 90%;
+  margin: auto;
+  border-radius: 5px;
+  background-color: var(--cor-fundo);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 main {
-    width: 90%;
-    margin: auto;   
-    
+  width: 90%;
+  margin: auto;
 }
 
 section {
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
 }
 
-.c-principais{
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(4, 4, 232, 0.4);
-    margin-bottom: 10px;
-    margin-top: 5px;
-
+.c-pedidos {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(4, 4, 232, 0.4);
+  margin-bottom: 1px;
+  margin-top: 1px;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
-.c-sobremesas{    
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(4, 4, 232, 0.4);
-    margin-bottom: 15px;
-    margin-top: 10px;
-
+.c-principais {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(4, 4, 232, 0.4);
+  margin-bottom: 1px;
+  margin-top: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
-.h2{
-    padding-top: 5px;    
+.c-sobremesas {
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(4, 4, 232, 0.4);
+  margin-bottom: 1px;
+  margin-top: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+.h2 {
+  margin-bottom: 1px;
+  margin-top: 1px;
+  padding-top: 1px;
+  padding-bottom: 1px;
 }
 
 .pedidos__btn {
-    border-radius: 5% !important;
-    border-width: 0;
-    padding: 3px;
-    font-size: x-small;
-    color: white;
-    background-color: var(--cor-primaria);
-    &:hover {
-        background-color: var(--cor-secundaria);
-    }
+  flex-direction: row;
+  justify-content: space-between;
+
+  margin: 5px;
+  padding: 0;
+  border-radius: 5% !important;
+  border-width: 0;
+  padding: 3px;
+  font-size: x-small;
+  color: white;
+  background-color: var(--cor-primaria);
+  &:hover {
+    background-color: var(--cor-secundaria);
+  }
 }
 
 .pedidos__qtd {
-    &::before {
-        content: " x ";
-    }
+  &::before {
+    content: " x ";
+  }
 }
 
 .nav__list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    margin: auto;
-    padding: 0;
-    
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: auto;
+  padding: 0;
 }
 
-.pri{
-    padding-left: 0;
-    width: 100%;
-    height: 100%;
-    
+.pri {
+  padding-left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .nav__link {
+  background: linear-gradient(to top, gray, white);
+  border-top-color: var(--cor-secundaria);
+  border-top-width: 0.25rem;
+  border-top: 10px;
+  border-radius: 10%;
+  padding: 0.5rem;
+  text-decoration: none;
 
-    background: linear-gradient(to top, gray, white);
-    border-top-color: var(--cor-secundaria);
-    border-top-width: 0.25rem;
-    border-top: 10px;
-    border-radius: 10%;
-    padding: 0.5rem;
-    text-decoration: none;
-
-    &:hover {
-        background-color: var(--cor-secundaria);
-    }
+  &:hover {
+    background-color: var(--cor-secundaria);
+  }
 }
 
 .titulo {
-    display: flex;
-    flex-direction: column;
-    text-align: left;      
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .titulo__head {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    font-size: medium;    
+  margin: 5px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: medium;
 }
 
 .descricao {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: small;
-    font-style: italic;    
-    text-align: left;
+  margin: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: small;
+  font-style: italic;
+  text-align: left;
 }
 
 .titulo__preco {
-    font-size: x-small;
+  margin: 5px;
+  font-size: x-small;
 
-    &::before {
-        content: "R$ ";
-    }
+  &::before {
+    content: "R$ ";
+  }
 }
 
 .prato {
-    display: flex;
-    flex-direction: column;
-    justify-self: auto;
-    text-align: left;
-    margin-top: 10px;
-    box-shadow: 0 4px 8px rgba(4, 4, 232, 0.4);
-    border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-self: auto;
+  text-align: left;
+  margin-top: 10px;
+  box-shadow: 0 4px 8px rgba(4, 4, 232, 0.4);
+  border-radius: 5px;
 }
 
 #total-comanda {
-    font-weight: bolder;
-    color: blue;
-    
+  font-weight: bolder;
+  color: blue;
 }
 
 .rodape {
-    background-color: yellow;
-    padding: 5px;
-    text-align: center;
-    border-radius: 5px;
+  background-color: yellow;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
 }
-

@@ -6,6 +6,7 @@ let teste = { titulo: "bife", descricao: "carne", preco: 10 };
 const main = document.querySelector("main");
 const principais = document.querySelector(".c-principais");
 const sobremesas = document.querySelector(".c-sobremesas");
+const ZerarTodosPedidos = document.querySelector(".c-pedidos");
 
 async function consultarWebAPI() {
   const url = "http://localhost:3001/menu";
