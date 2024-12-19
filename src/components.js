@@ -1,4 +1,5 @@
 import { listaPratos, valorComanda } from "./pratos.js";
+
 class CardPrato {
   // Variáveis públicas
   nodeElem = document.createElement("div");
@@ -32,7 +33,7 @@ class CardPrato {
     this.descricaoElem.classList.add("descricao");
 
     this.qtdElem.classList.add("pedidos__qtd");
-    this.qtdElem.innerText = this.qtd; // Certifique-se de que 'this.qtd' é inicializado corretamente
+    this.qtdElem.innerText = this.qtd;
 
     this.nodeElem.classList.add("prato");
 
@@ -93,19 +94,3 @@ export function criarCardPrato(info) {
   const cardObjeto = new CardPrato(info);
   return cardObjeto;
 }
-
-export function ZerarTodosPedidos(listaPratos) {
-  listaPratos.forEach((prato) => {
-    prato.qtd = 0;
-    prato.qtdElem.innerText = prato.qtd;
-  });
-  valorComanda();
-}
-
-const zerarTodosBtn = document.createElement("button");
-zerarTodosBtn.innerText = "Zerar Todos os Pedidos";
-zerarTodosBtn.classList.add("pedidos__btn");
-
-zerarTodosBtn.onclick = () => {
-  ZerarTodosPedidos(listaPratos);
-};

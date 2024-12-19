@@ -34,15 +34,6 @@ section {
   padding: 20px;
 }
 
-.c-pedidos {
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(4, 4, 232, 0.4);
-  margin-bottom: 1px;
-  margin-top: 1px;
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .c-principais {
   text-align: center;
   box-shadow: 0 4px 8px rgba(4, 4, 232, 0.4);
