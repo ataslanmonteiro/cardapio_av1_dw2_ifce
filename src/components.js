@@ -1,8 +1,6 @@
 import { listaPratos, valorComanda } from "./pratos.js";
-
 class CardPrato {
-  // variáveis públicas
-
+  // Variáveis públicas
   nodeElem = document.createElement("div");
   tituloElem = document.createElement("h2");
   tituloContainer = document.createElement("div");
@@ -17,7 +15,7 @@ class CardPrato {
   qtd = 0;
   preco = 0;
 
-  // construtor
+  // Construtor
   constructor(info) {
     this.tituloElem.innerText = info.titulo;
     this.tituloElem.classList.add("titulo__head");
@@ -34,7 +32,7 @@ class CardPrato {
     this.descricaoElem.classList.add("descricao");
 
     this.qtdElem.classList.add("pedidos__qtd");
-    this.qtdElem.innerText = 0;
+    this.qtdElem.innerText = this.qtd; // Certifique-se de que 'this.qtd' é inicializado corretamente
 
     this.nodeElem.classList.add("prato");
 
@@ -71,13 +69,14 @@ class CardPrato {
 
     this.btnContainer.append(
       this.pedirBtn,
-      this.qtdElem,
-      this.diminuir,
-      this.nodeElem.append(
-        this.tituloContainer,
-        this.descricaoElem,
-        this.btnContainer
-      )
+      this.diminuirBtn,
+      this.zerarBtn,
+      this.qtdElem
+    );
+    this.nodeElem.append(
+      this.tituloContainer,
+      this.descricaoElem,
+      this.btnContainer
     );
   }
 
