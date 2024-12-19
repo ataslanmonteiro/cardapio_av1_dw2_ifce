@@ -11,6 +11,8 @@ class CardPrato {
   btnContainer = document.createElement("div");
   qtdElem = document.createElement("span");
   pedirBtn = document.createElement("button");
+  diminuirBtn = document.createElement("button");
+  zerarBtn = document.createElement("button");
 
   qtd = 0;
   preco = 0;
