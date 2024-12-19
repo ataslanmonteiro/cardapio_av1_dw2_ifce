@@ -1,0 +1,14 @@
+{
+    "menu": {
+        "principais": [
+            { "titulo": "Bife à Parmegiana", "descricao": "Um clássico italiano...", "preco": 35.90 },
+            {"titulo": "Salmão grelhado", "descricao": "Salmão grelhado com legumes salteados.", "preco": 35.99},
+            { "titulo": "Lasanha à bolonhesa", "descricao": "Massa recheada com carne bovina e molho à bolonhesa,\ncoberta com bechamel e queijo.", "preco": 30.99}
+        ],
+        "sobremesas": [
+            { "titulo": "Tiramissu", "descricao": "Delicioso doce italiano...", "preco": 12.50 },
+            {"titulo": "Pudim de leite", "descricao": "Tradicional pudim de leite com caramelo.", "preco": 8.99},
+            { "titulo": "Mousse de chocolate", "descricao": "Delicioso mousse de chocolate com raspas de chocolate.", "preco": 10.99}
+        ]
+    }
+}
