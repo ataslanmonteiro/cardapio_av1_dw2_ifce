@@ -49,6 +49,7 @@ class CardPrato {
 
     this.diminuirBtn.innerText = "Diminuir";
     this.diminuirBtn.classList.add("pedidos__btn");
+
     this.diminuirBtn.onclick = () => {
       if (this.qtd > 0) {
         this.qtd -= 1;
@@ -59,6 +60,7 @@ class CardPrato {
 
     this.zerarBtn.innerText = "Zerar";
     this.zerarBtn.classList.add("pedidos__btn");
+
     this.zerarBtn.onclick = () => {
       this.qtd = 0;
       this.qtdElem.innerText = this.qtd;
@@ -67,8 +69,7 @@ class CardPrato {
 
     this.btnContainer.classList.add("pedidos");
 
-    this.btnContainer.append(this.pedirBtn, this.qtdElem);
-    this.nodeElem.append(
+    this.btnContainer.append(this.pedirBtn, this.qtdElem, this.diminuir, this.nodeElem.append(
       this.tituloContainer,
       this.descricaoElem,
       this.btnContainer
